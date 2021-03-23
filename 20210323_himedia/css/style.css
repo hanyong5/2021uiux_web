@@ -43,7 +43,7 @@ body{min-width:980px}
 /*section*/
 .section{background: #eee;}
 .banner{width: 980px;margin: 0 auto}
-.banner li{float: left;width:calc(100% / 5);padding-top:10px}
+.banner li{float: left;width:calc(100% / 5);padding-top:20px}
 .banner li a{display: block;height: 196px;text-align: center;color:white}
 .banner li:nth-child(1){background: #7c99b9;}
 .banner li:nth-child(2){background: pink;}
@@ -51,6 +51,16 @@ body{min-width:980px}
 .banner li:nth-child(4){background: skyblue;}
 .banner li:nth-child(5){background: gold;}
 
+/*content 1st*/
+.contWrap1st{width: 980px;margin: 0 auto}
+.contWrap1st li{float: left;width:310px;margin-right:25px;}
+.contWrap1st li:last-child{margin-right:0;}
+.contWrap1st .body{
+    padding:10px 20px 10px 20px;
+    border: 1px solid #ccc;
+    border-top: 0 none;
+}
+.contWrap1st img{display: block;}
 
 
 /*common*/
@@ -58,3 +68,4 @@ body{min-width:980px}
 .mb10{margin-bottom:10px !important;}
 .mb15{margin-bottom:15px !important;}
 .mb20{margin-bottom:20px !important;}
+.mb30{margin-bottom:30px !important;}
