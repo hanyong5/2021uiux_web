@@ -25,7 +25,7 @@ body{min-width:980px}
 
 /*visual wrap*/
 .visualWrap{
-    height: 400px;overflow: hidden;
+    height: 400px;_overflow: hidden;
 /*
     background-color: #223a6a;
     background-image: url(../images/main_bg1.jpg);
@@ -75,6 +75,21 @@ body{min-width:980px}
 .contWrap2st .body{width: 150px;}
 .contWrap2st .body a{font-size: 14px;color:#4b8ce0}
 
+/*footer*/
+#footer{background: #eee;}
+.footerTopWrap{background: #ccc;}
+.footerTop{width: 980px;margin: 0 auto;}
+.footerTop ul{float: left;overflow: hidden;}
+.footerTop li{float: left;position: relative;}
+.footerTop li a{display: block;padding: 0 20px;line-height:40px;}
+.footerTop li:first-child a{padding-left: 0;}
+.footerTop li:after{
+    content:"";position: absolute;width: 1px;height: 10px;background: #000;
+    right:-1px;top:15px
+}
+.footerBottom{width: 980px;margin: 0 auto;padding:20px 0;}
+.footerBottom h3{float: left;margin-right:20px;}
+.footerBottom .copy{float: left;}
 /*common*/
 .mb5{margin-bottom:5px !important;}
 .mb10{margin-bottom:10px !important;}
