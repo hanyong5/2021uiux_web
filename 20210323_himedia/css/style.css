@@ -62,6 +62,18 @@ body{min-width:980px}
 }
 .contWrap1st img{display: block;}
 
+/*content 2st*/
+.contWrap2st{width: 980px;margin: 0 auto;}
+.contWrap2st li{
+    position: relative;overflow: hidden;
+    float: left;width:310px;margin-right: 25px;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+.contWrap2st li:last-child{margin-right: 0;}
+.contWrap2st img{position: absolute;right: -50px;}
+.contWrap2st .body{width: 150px;}
+.contWrap2st .body a{font-size: 14px;color:#4b8ce0}
 
 /*common*/
 .mb5{margin-bottom:5px !important;}
