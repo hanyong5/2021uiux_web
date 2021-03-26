@@ -62,12 +62,13 @@
         }
         
         
-        #section1st li{float: left;width:calc((1000px - 60px) / 4  )}
+        #section1st li{
+            float: left;width:calc((1000px - 60px) / 4  );
+            height: 235px;position: relative;
+            cursor: pointer;overflow: hidden;
+        }
         #section1st li + li{margin-left:20px;}
-/*
-        #section li{margin-left: 20px;}
-        #section li:first-child{margin-left:0;}
-*/    
+ 
         #section1st h2,
         #section1st p{text-align: center;}
         #section1st h2:after{
@@ -76,6 +77,19 @@
             margin: 10px auto;
         }
         #section1st p{margin-bottom:20px;}
+        #section1st .overlay{
+            background:skyblue;
+            height: 100%;width: 100%;
+            position: absolute;
+            top:100%;opacity:1;
+            transition:0.3s;
+            text-align: center;
+            line-height: 235px;
+
+        }
+        
+        #section1st li:hover .overlay{opacity:1;top:0}
+        
         
         
         
@@ -137,38 +151,26 @@
             <ul class="clearfix">
                 <li>
                     <img src="../images/testimg.jpg" alt="">
+                    <div class="overlay">TOP</div>
                 </li>
                 <li>
                     <img src="../images/testimg.jpg" alt="">
+                    <div class="overlay">TOP</div>
                 </li>
                 <li>
                     <img src="../images/testimg.jpg" alt="">
+                    <div class="overlay">TOP</div>
                 </li>
                 <li>
                     <img src="../images/testimg.jpg" alt="">
+                    <div class="overlay">TOP</div>
                 </li>
+                
             </ul>
         </section>
     </div>
     
-    <section class="container" id="section2st">
-        <h2>GALLERY1</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, officia!</p>
-        <ul class="clearfix">
-            <li>
-                <img src="../images/testimg.jpg" alt="">
-            </li>
-            <li>
-                <img src="../images/testimg.jpg" alt="">
-            </li>
-            <li>
-                <img src="../images/testimg.jpg" alt="">
-            </li>
-            <li>
-                <img src="../images/testimg.jpg" alt="">
-            </li>
-        </ul>
-    </section>
+    
     
 </body>
 </html>
