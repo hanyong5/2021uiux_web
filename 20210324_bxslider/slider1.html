@@ -66,6 +66,7 @@
             float: left;width:calc((1000px - 60px) / 4  );
             height: 235px;position: relative;
             cursor: pointer;overflow: hidden;
+            border-radius:0 10% 0 10%
         }
         #section1st li + li{margin-left:20px;}
  
@@ -78,17 +79,21 @@
         }
         #section1st p{margin-bottom:20px;}
         #section1st .overlay{
-            background:skyblue;
+            background:rgba(186, 172, 226, 0.88);
             height: 100%;width: 100%;
             position: absolute;
-            top:100%;opacity:1;
             transition:0.3s;
+            display:flex;
+            justify-content: center;
+            align-items: center;
             text-align: center;
-            line-height: 235px;
-
+            
+            top:-100%;
+            left:0;
+            
         }
         
-        #section1st li:hover .overlay{opacity:1;top:0}
+        #section1st li:hover .overlay{top:0;left:0}
         
         
         
@@ -151,7 +156,7 @@
             <ul class="clearfix">
                 <li>
                     <img src="../images/testimg.jpg" alt="">
-                    <div class="overlay">TOP</div>
+                    <div class="overlay">TOP<br>TEST</div>
                 </li>
                 <li>
                     <img src="../images/testimg.jpg" alt="">
