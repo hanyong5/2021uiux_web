@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const data = [
+      ["pc01.jpg","pc02.jpg","pc03.jpg"],
+      ["우주","지구","이미지"]
+    ];
+
+    const data1 = [
+      ["pc01.jpg","img1"],
+      ["pc02.jpg","img2"],
+      ["pc03.jpg","img3"]
+
+
+    ]
+
+    function imgView(){
+      for(let x=0;x<data[0].length;x++){
+
+        // document.write("<img src='../images/" + data[0][x] +"'>");
+        // document.write(data[1][x]);
+
+        for(let y=0;y<data[x].length;y++){
+          document.write("<img src='../images/" + data[x][y] +"'>");
+          document.write("<img src='../images/" + data[x][y] +"'>");
+        }
+      }
+    }
+    //imgView();
+
+    function imgView1(){
+      for(let x=0;x<data1.length;x++){
+          document.write("<img src='../images/" + data1[x][0] +"'>");
+          document.write(data1[x][1]);
+      }
+    }
+    imgView1();
+  </script>
+</body>
+</html>
