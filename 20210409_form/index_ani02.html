@@ -19,11 +19,13 @@
       /* display: flex;
       justify-content: center;
       align-items: center; */
+      overflow:hidden
     }
     .wrap{
       position: absolute;
       left: 50%;top: 50%;
       transform:translate(-50%,-50%);
+      z-index: 1
       }
     .wrap label{
       display: block;width: 60px;height: 20px;
@@ -51,6 +53,7 @@
     }
     .wrap .img01{
       position: absolute;right: -100px;top:-200px;
+
       animation-name:bal01;
       animation-duration: 3s;
       animation-iteration-count:infinite;
@@ -58,8 +61,18 @@
     }
 
     @keyframes bal01 {
-
       to{top:-250px}
+    }
+
+    .img00{
+      position: absolute;left:-100px;bottom:-100px;
+      animation-name:air;
+      animation-duration:3s;
+      animation-fill-mode:forwards;
+    }
+
+    @keyframes air {
+      to{left:100%;bottom:100%}
     }
   </style>
 </head>
@@ -73,5 +86,6 @@
       <input type="submit" value="button" class="btn-search">
     </form>
   </div>
+  <img src="images/reallyAir.png" alt="" class="img00">
 </body>
 </html>
