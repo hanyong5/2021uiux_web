@@ -58,10 +58,11 @@
       animation-duration: 3s;
       animation-iteration-count:infinite;
       animation-direction:alternate;
+      transform:rotate(5deg) scale(1)
     }
 
     @keyframes bal01 {
-      to{top:-250px}
+      to{top:-300px;transform:rotate(-5deg) scale(1.1)}
     }
 
     .img00{
@@ -69,10 +70,11 @@
       animation-name:air;
       animation-duration:3s;
       animation-fill-mode:forwards;
+
     }
 
     @keyframes air {
-      to{left:100%;bottom:100%}
+      to{left:100%;bottom:100%;}
     }
   </style>
 </head>
