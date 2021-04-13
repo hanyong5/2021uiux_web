@@ -44,12 +44,19 @@
     }
   }
 
+  function btnView1(x){
+    const bodyView = document.getElementsByTagName("body");
+    bodyView[0].style.backgroundColor = x;
+  }
+
 
   </script>
   <button onclick="view()">테두리변경</button>
   <button onclick="btnView(1)">배경변경 오렌지</button>
   <button onclick="btnView(2)">배경변경 노랑</button>
 
+  <button onclick="btnView1('orange')">배경변경 오렌지</button>
+  <button onclick="btnView1('green')">배경변경 노랑</button>
 
 
 
