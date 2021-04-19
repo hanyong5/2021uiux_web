@@ -36,10 +36,6 @@
   <script>
     const scrollY = document.querySelector(".scrollView");
     const boxPos = document.querySelectorAll(".box");
-    const winH = document.querySelector(".winHeight");
-
-
-
 
 
     window.addEventListener("scroll",function(){
@@ -55,13 +51,7 @@
 
     });
 
-    //window.addEventListener("resize",function(){});
-    window.addEventListener("resize",view);
-    function view(){
-      const winHeight = window.innerHeight/2;
-      winH.innerHTML = winHeight;
-    }
-    view();
+
   </script>
 
 

@@ -40,27 +40,27 @@
 
 
 
-
-
-    window.addEventListener("scroll",function(){
-      const scrollYPosition = window.pageYOffset;
-      scrollY.innerHTML = scrollYPosition;
-      for(let i=0;i<boxPos.length;i++){
-        if(boxPos[i].offsetTop<scrollYPosition + winHeight){
-          boxPos[i].classList.add("boxview");
-        }else{
-          boxPos[i].classList.remove("boxview");
-        }
-      }
-
-    });
-
-    //window.addEventListener("resize",function(){});
-    window.addEventListener("resize",view);
     function view(){
       const winHeight = window.innerHeight/2;
       winH.innerHTML = winHeight;
+
+      window.addEventListener("scroll",function(){
+
+        const scrollYPosition = window.pageYOffset;
+        scrollY.innerHTML = scrollYPosition;
+
+        for(let i=0;i<boxPos.length;i++){
+          if(boxPos[i].offsetTop<scrollYPosition + winHeight){
+            boxPos[i].classList.add("boxview");
+          }else{
+            boxPos[i].classList.remove("boxview");
+          }
+        }
+
+      });
     }
+    //window.addEventListener("resize",function(){});
+    window.addEventListener("resize",view);
     view();
   </script>
 
