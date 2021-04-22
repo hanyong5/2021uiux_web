@@ -18,28 +18,34 @@
     //   alert("hi_4");
     // }
   </script>
-
   <script>
     function cImg(){
       //alert("hi");
       const sel = document.querySelector("#sel");
       const img = document.querySelector("#myImg");
+      const imgW = document.querySelector("#imgW");
+
+      img.onload = function(){
+        imgW.innerHTML = img.width;
+      }
 
       let index = sel.selectedIndex;
       console.log(index);
       img.src = sel.options[index].value;
       console.log(img.width+"px")
+
+      
     }
   </script>
+
 </head>
-<body>
+<body onload="cImg()">
   <script>
     // window.onload = function(){
     //   alert("hi_2");
     // }
   </script>
-
-
+  <span id="imgW"></span>
   <form>
     <select id="sel" onchange="cImg()">
       <option value="../../images/apple.png">사과</option>
@@ -50,7 +56,6 @@
   <p>
     <img src="../../images/apple.png" alt="" id="myImg">
   </p>
-
 
 
 
