@@ -51,6 +51,7 @@
       const car1Pos = $("#car1").offset().top;
       const topPos = $(".top").offset().top;
       $(".menuPos").html(menuPos + "px");
+      $(".topPos").html(topPos + "px");
 
 
       $(window).scroll(function(){
@@ -71,7 +72,7 @@
           $("#car1").removeClass("move");
         }
 
-        if(scrollY > topPos - 500){
+        if(scrollY > $("body").innerHeight()/2 ){
           $(".top").addClass("view");
         }else{
           $(".top").removeClass("view");
@@ -90,6 +91,7 @@
   <div class="box1">
     scroll location : <span class="scrollY">0</span><br>
     menu location : <span class="menuPos">0</span>
+    top location : <span class="topPos">0</span>
   </div>
   <p>1</p>
   <p>2</p>
