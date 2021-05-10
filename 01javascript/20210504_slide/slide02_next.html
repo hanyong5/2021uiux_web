@@ -47,7 +47,8 @@
 
           current = i;
         }
-      });
+      }); //next btn
+
       $(".prev").click(function(){
         if(overBtn == false){
           overBtn = true;
@@ -61,8 +62,21 @@
           banner.eq(i).css({left:"-100%"}).stop().animate({left:0},{duration:1000,complete:function(){overBtn=false}});
           current = i;
         }
-      });
-    });
+      }); // prev btn
+
+      // $(".run").click(function(){
+      //   $(".next").trigger("click");
+      // })
+
+      // setInterval(함수이름,3000);
+      // setInterval(function(){},3000);
+      function trigger(){
+        $(".next").trigger("click")
+      }
+
+      setInterval(trigger,3000);
+
+    }); //ready
   </script>
 </head>
 <body>
@@ -78,6 +92,7 @@
     <div class="btn">
       <span class="prev">이전</span>
       <span class="next">다음</span>
+      <span class="run">실행</span>
     </div>
     <!-- <div class="prev">이전</div>
     <div class="next">다음</div> -->
