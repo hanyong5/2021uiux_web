@@ -9,7 +9,9 @@ if (G5_IS_MOBILE) {
 
     </div>
     <? if(!defined('_INDEX_')){?>
-      <? include_once(G5_THEME_PATH.'/skin/nav/mysubmenu.php');?>
+    <div id="aside">
+        <? include_once(G5_THEME_PATH.'/skin/nav/mysubmenu.php');?>
+    </div>
     <?}?>
 </div>
 

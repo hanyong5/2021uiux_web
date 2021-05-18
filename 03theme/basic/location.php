@@ -24,7 +24,32 @@ $(document).ready(function(){
 	});
 </script>
 
+
+
 <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi ipsam deleniti inventore veniam recusandae quo minus asperiores saepe voluptatibus enim, odio consequuntur praesentium adipisci ea illum reprehenderit rem eveniet dignissimos mollitia quos accusantium. Quae ratione harum ipsum tempora veritatis, corporis fuga, laboriosam nulla minus, sint provident id rerum porro amet, cum consequatur saepe asperiores fugit dolorem nihil dicta eligendi. Non soluta numquam dolor rem totam quas labore error necessitatibus deserunt quod consequatur vero porro quis pariatur tempora at aperiam, accusantium ipsa voluptate molestias aliquam perspiciatis atque! Mollitia nihil blanditiis, illum ut! Quam ab optio neque quaerat inventore modi quae corporis?</div>
+
+
+<!--
+	* 카카오맵 - 약도서비스
+	* 한 페이지 내에 약도를 2개 이상 넣을 경우에는
+	* 약도의 수 만큼 소스를 새로 생성, 삽입해야 합니다.
+-->
+<!-- 1. 약도 노드 -->
+<div id="daumRoughmapContainer1620962097845" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+<!-- 2. 설치 스크립트 -->
+<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+<!-- 3. 실행 스크립트 -->
+<script charset="UTF-8">
+	new daum.roughmap.Lander({
+		"timestamp" : "1620962097845",
+		"key" : "25r8u",
+		"mapWidth" : "960",
+		"mapHeight" : "400"
+	}).render();
+</script>
+
 
 
 
