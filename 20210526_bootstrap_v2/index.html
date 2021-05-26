@@ -17,6 +17,7 @@
     :root{
       --primary-color-1:#4458cc;
       --primary-color-2:#854fee;
+      --bgcolor1:#efefef;
       --gradient-color-1:linear-gradient(90deg,#4458cc,#854fee);
       --shadow-color:0 10px 30px rgba(118,85,225,0.3);
       --box-shadow:0 10px 20px rgba(57,56,61,0.3);
@@ -33,6 +34,8 @@
   .button.secondary-button{
     box-shadow:var(--box-shadow);
   }
+
+  .content{background:var(--bgcolor1);}
   </style>
 </head>
 <body>
@@ -84,6 +87,24 @@
     </div>
   </div>
   <!-- visualWrap end -->
+
+  <!-- content start-->
+  <div class="content">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-6 order-2 order-md-1">
+          <img src="assets/sobre.svg" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-6 text-center text-md-left order-1 order-md-2 ">
+          <h2>Lorem ipsum dolor sit amet.</h2>
+          <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, animi.</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum recusandae non architecto nisi unde assumenda accusantium alias inventore consequuntur praesentium.</p>
+          <a href="#!" class="btn button primary-button px-5 mb-5 mb-md-0 d-block d-md-inline-block ">ENTER CONTACT</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- content end-->
 
 
 
