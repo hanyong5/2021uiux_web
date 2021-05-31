@@ -212,8 +212,9 @@
           <a href="assets/servicos/1.jpg" class="popup_link">
             <img src="assets/servicos/1.jpg" alt="" class="img-fluid">
           </a>
+          <p>test</p>
         </div>
-        <div class="col-6 col-lg-3 element-item web mb-3">
+        <div class="col-6 element-item web mb-3">
           <a href="assets/servicos/2.jpg" class="popup_link">
             <img src="assets/servicos/2.jpg" alt="" class="img-fluid">
           </a>
@@ -270,7 +271,7 @@
     <h2 class="title text-center">CUSTOMER</h2>
     <p class="text-center mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, aspernatur!</p>
 
-    <div class="owl-carousel owl-theme owl-loaded">
+    <div class="owl-carousel owl-theme owl-loaded" id="slider1">
 
       <!-- #1 -->
       <div>
@@ -327,7 +328,46 @@
 
     </div>
 
-  </div>
+<style>
+.com .owl-item{transition:0.2s;padding:20px;opacity:0.4}
+.com .owl-item.center{_border: 5px solid #000;transform:scale(1.2);opacity:1}
+
+</style>
+
+<div class="com">
+    <div class="owl-carousel owl-theme owl-loaded" id="slider2">
+      <div>
+        <img src="assets/servicos/1.jpg" alt="" class="img-fluid">
+      </div>
+      <div>
+        <img src="assets/servicos/1.jpg" alt="" class="img-fluid">
+      </div>
+      <div>
+        <img src="assets/servicos/1.jpg" alt="" class="img-fluid">
+      </div>
+      <div>
+        <img src="assets/servicos/1.jpg" alt="" class="img-fluid">
+      </div>
+      <div>
+        <img src="assets/servicos/1.jpg" alt="" class="img-fluid">
+      </div>
+      <div>
+        <img src="assets/servicos/1.jpg" alt="" class="img-fluid">
+      </div>
+      <div>
+        <img src="assets/servicos/1.jpg" alt="" class="img-fluid">
+      </div>
+      <div>
+        <img src="assets/servicos/1.jpg" alt="" class="img-fluid">
+      </div>
+      <div>
+        <img src="assets/servicos/1.jpg" alt="" class="img-fluid">
+      </div>
+    </div>
+
+</div>
+
+</div>
 </div>
   <!-- customer end -->
 <style>
@@ -404,7 +444,7 @@
 
   $(".view .popup_link").magnificPopup({type:"image"});
 
-  $(".customer .owl-carousel").owlCarousel({
+  $("#slider1").owlCarousel({
     loop:false,
     margin:30,
     autoplay:true,
@@ -415,8 +455,24 @@
     }
   });
 
-</script>
+  $("#slider2").owlCarousel({
+    center:true,
+    loop:true,
+    margin:40,
+    autoplay:true,
+    responsive:{
+      0:{items:3},
+      600:{items:3},
+      1000:{items:5}
+    }
+  });
 
+</script>
+<style>
+.com .owl-item{transition:0.2s;padding:20px;opacity:0.4}
+.com .owl-item.center{_border: 5px solid #000;transform:scale(1.2);opacity:1}
+
+</style>
 
 
 
