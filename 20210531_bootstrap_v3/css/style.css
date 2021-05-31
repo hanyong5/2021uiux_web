@@ -4,6 +4,8 @@
   --primary-color:#02b3e4;
   --secondary-color:#ff5483;
   --third-color:#a951ed;
+  --font-1st:#333;
+  --font-2st:#7d97ad;
 }
 
 #headerWrap .bgcolor{
@@ -25,7 +27,8 @@
   box-shadow:10px 10px 25px rgb(46,61,73)
 }
 
-
+.slider .slider-title{font-size:1.1rem;color:var(--font-2st)}
+.slider .row{position: relative;}
 
 
 

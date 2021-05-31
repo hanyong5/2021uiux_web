@@ -100,37 +100,65 @@
       </div> <!-- container -->
     </div> <!-- #headerWrap -->
 
-    <div class="container">
+    <div class="container mb-5">
       <img src="images/logos.png" alt="" class="img-fulid w-100">
     </div>
 
-<div class="container">
+<div class="slider">
+  <div class="container">
+    <div class="slider-title text-center mb-3">OUR AMAZING COMMUNITY</div>
 
-      <!-- Slider main container -->
-  <div class="swiper-container">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide">Slide 1</div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      ...
-    </div>
+    <div class="row">
+      <div class="swiper-container col-md-10">
+        <div class="swiper-wrapper">
+          <!-- #1 -->
+          <div class="swiper-slide">
+            <div class="text-center">
+              <h4>1Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos minima officia doloribus inventore ipsum nam fugiat delectus, nobis. Non, nesciunt!</h4>
+              <p>Lorem ipsum dolor sit.</p>
+            </div>
+          </div>
+          <!-- #1 -->
+          <!-- #2 -->
+          <div class="swiper-slide">
+            <div class="text-center">
+              <h4>2Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos minima officia doloribus inventore ipsum nam fugiat delectus, nobis. Non, nesciunt!</h4>
+              <p>Lorem ipsum dolor sit.</p>
+            </div>
+          </div>
+          <!-- #2 -->
+          <!-- #3 -->
+          <div class="swiper-slide">
+            <div class="text-center">
+              <h4>3Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos minima officia doloribus inventore ipsum nam fugiat delectus, nobis. Non, nesciunt!</h4>
+              <p>Lorem ipsum dolor sit.</p>
+            </div>
+          </div>
+          <!-- #3 -->
 
-    <!-- If we need navigation buttons -->
-    <!-- <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div> -->
+        </div>
 
+      </div>
+      <div class="swiper-button-prev d-none d-md-block"></div>
+      <div class="swiper-button-next d-none d-md-block"></div>
 
-  </div>
+    </div> <!--row-->
+
+  </div> <!-- container -->
 </div>
 
 
 
 <script>
   const swiper = new Swiper('.swiper-container', {
-  speed: 400,
-  spaceBetween: 100,
+    speed: 400,
+    spaceBetween: 100,
+    loop:true,
+    autoplay:true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
   });
 </script>
   </body>
