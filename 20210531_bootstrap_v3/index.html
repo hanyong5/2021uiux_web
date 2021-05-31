@@ -27,7 +27,7 @@
     <title>::UDACITY::</title>
   </head>
   <body>
-    <div id="headerWrap">
+    <div id="headerWrap" class="mb-5">
       <div class="bgcolor"></div>
       <div class="container">
         <nav class="navbar navbar-expand-lg navbar-dark">
@@ -55,12 +55,83 @@
             </ul>
           </div>
         </nav>
-      </div>
+        <div class="row">
+          <div class="col-md-8 mb-3 mb-md-0">
+            <div class="video">
+              <video src="https://d125fmws0bore1.cloudfront.net/videos/video-bg-udacity.ogv" autoplay loop muted></video>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <ul class="card-view">
+              <li class="bg-white mb-3">
+                <a href="#!" class="d-flex">
+                  <img src="images/card1.png" alt="" style="max-width:100px">
+                  <div class="p-3">
+                    <h4>Lorem ipsum.</h4>
+                    <p>Lorem ipsum dolor.</p>
+                  </div>
+                </a>
+              </li>
+              <li class="bg-white mb-3">
+                <a href="#!" class="d-flex">
+                  <img src="images/card2.png" alt="" style="max-width:100px">
+                  <div class="p-3">
+                    <h4>Lorem ipsum.</h4>
+                    <p>Lorem ipsum dolor.</p>
+                  </div>
+                </a>
+              </li>
+              <li class="bg-white">
+                <a href="#!" class="d-flex">
+                  <img src="images/card3.png" alt="" style="max-width:100px">
+                  <div class="p-3">
+                    <h4>Lorem ipsum.</h4>
+                    <p>Lorem ipsum dolor.</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+
+
+      </div> <!-- container -->
+    </div> <!-- #headerWrap -->
+
+    <div class="container">
+      <img src="images/logos.png" alt="" class="img-fulid w-100">
     </div>
 
+<div class="container">
+
+      <!-- Slider main container -->
+  <div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      ...
+    </div>
+
+    <!-- If we need navigation buttons -->
+    <!-- <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div> -->
+
+
+  </div>
+</div>
 
 
 
-
+<script>
+  const swiper = new Swiper('.swiper-container', {
+  speed: 400,
+  spaceBetween: 100,
+  });
+</script>
   </body>
 </html>

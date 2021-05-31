@@ -13,3 +13,21 @@
   transform:skew(0deg,-15deg);
   top:-280px;
 }
+
+
+#headerWrap .video video{
+  object-fit:fill;width: 100%;border-radius:5px;
+  box-shadow:10px 10px 25px rgb(46,61,73)
+}
+
+.card-view li{
+  border-radius: 5px;overflow: hidden;
+  box-shadow:10px 10px 25px rgb(46,61,73)
+}
+
+
+
+
+
+
+/* han */
