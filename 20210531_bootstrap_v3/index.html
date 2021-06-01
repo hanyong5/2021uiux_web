@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/base.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cssgram/0.1.10/cssgram.min.css">
+
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
     <!-- Bootstrap js -->
@@ -145,7 +147,7 @@
 
   </div> <!-- container -->
 </div>
-<div class="banner">
+<div class="banner mb-5">
   <div class="container">
     <div class="row">
 
@@ -153,9 +155,8 @@
       <div class="col-sm-6 col-lg-4 mb-5">
         <div class="card">
 
-          <div class="card-img">
+          <div class="card-img moon">
             <img src="images/nano1.jpg" alt="" class="img-fluid w-100">
-            <div class="mask"></div>
           </div>
 
           <div class="card-body">
@@ -172,9 +173,8 @@
       <div class="col-sm-6 col-lg-4 mb-5">
         <div class="card">
 
-          <div class="card-img">
+          <div class="card-img moon">
             <img src="images/nano2.jpg" alt="" class="img-fluid w-100">
-            <div class="mask"></div>
           </div>
 
           <div class="card-body">
@@ -191,9 +191,8 @@
       <div class="col-sm-6 col-lg-4 mb-5">
         <div class="card">
 
-          <div class="card-img">
+          <div class="card-img moon">
             <img src="images/nano3.jpg" alt="" class="img-fluid w-100">
-            <div class="mask"></div>
           </div>
 
           <div class="card-body">
@@ -211,9 +210,8 @@
       <div class="col-sm-6 col-lg-4 mb-5">
         <div class="card">
 
-          <div class="card-img">
+          <div class="card-img moon">
             <img src="images/nano4.jpg" alt="" class="img-fluid w-100">
-            <div class="mask"></div>
           </div>
 
           <div class="card-body">
@@ -230,9 +228,8 @@
       <div class="col-sm-6 col-lg-4 mb-5">
         <div class="card">
 
-          <div class="card-img">
+          <div class="card-img moon">
             <img src="images/nano5.jpg" alt="" class="img-fluid w-100">
-            <div class="mask"></div>
           </div>
 
           <div class="card-body">
@@ -249,9 +246,8 @@
       <div class="col-sm-6 col-lg-4 mb-5">
         <div class="card">
 
-          <div class="card-img">
+          <div class="card-img moon">
             <img src="images/nano6.jpg" alt="" class="img-fluid w-100">
-            <div class="mask"></div>
           </div>
 
           <div class="card-body">
@@ -275,6 +271,25 @@
   </div><!--container-->
 </div><!--banner-->
 
+<div class="adven">
+  <div class="container">
+    <h3 class="adven-title text-center mb-4">The Udacity Advantage</h3>
+    <div class="row">
+      <div class="col-md-6 d-flex flex-column justify-content-center text-center text-md-left order-2 order-md-1">
+        <div class="icon d-flex justify-content-center align-items-center mb-3 ml-auto mr-auto ml-md-0">
+          <img src="images/adv-icon1.svg" alt="light">
+        </div>
+        <h4 class="title-1st">Lorem ipsum dolor sit amet.</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem nemo, voluptatem. Veritatis nulla, itaque reiciendis veniam nihil nisi amet odio magni dignissimos voluptatibus eos mollitia voluptate aperiam eaque officiis numquam.</p>
+
+      </div>
+      <div class="col-md-6 img-view order-1 mb-5 oder-md-2 mb-md-0">
+        <img src="images/adv-img1.jpg" alt="" class="img-fluid img-1st">
+        <img src="images/adv-img2.jpg" alt="" class="img-fluid img-2st">
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
@@ -289,6 +304,20 @@
       prevEl: '.swiper-button-prev',
     },
   });
+
+  $(".banner .row > div").hover(function(){
+    let i = $(this).index();
+    //console.log(i);
+    //$(".banner .row > div").eq(i).find(".card-img").attr("class","card-img");
+    $(".banner .row > div").eq(i).find(".card-img").removeClass("moon");
+  },function(){
+    //$(".banner .card-img").attr("class","card-img moon");
+    $(".banner .card-img").addClass("moon");
+  });
+
+
+
+
 </script>
   </body>
 </html>
